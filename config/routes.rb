@@ -1,7 +1,8 @@
 AdventureApp::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/games"
-  get "static_pages/company"
+  root 'static_pages#home'
+  
+  match '/games', to: 'static_pages#games', via: 'get'
+  match '/company', to: 'static_pages#company', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
