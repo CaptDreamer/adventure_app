@@ -1,6 +1,10 @@
 AdventureApp::Application.routes.draw do
+  resources :sessions, only: [:new, :create, :destroy]
+
   root 'static_pages#home'
   
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
   match '/games', to: 'static_pages#games', via: 'get'
   match '/company', to: 'static_pages#company', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
