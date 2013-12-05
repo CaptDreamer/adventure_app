@@ -12,6 +12,7 @@ describe "StaticPages" do
     it { should have_link("Company", href: company_path) }
     it { should have_link("Games", href: games_path) }
     it { should have_link("Adventure|Byte", href: root_path) }
+    it { should_not have_content("Admin") }
   end
 
   describe "Company Page" do

@@ -12,19 +12,20 @@ gem 'holder_rails', '2.2.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails', '~> 2.99.0.beta1'
   # The following optional lines are part of the advanced setup.
-  gem 'guard-rspec', '2.5.0'
-  gem 'spork-rails', '4.0.0'
-  gem 'guard-spork', '1.5.0'
-  gem 'childprocess', '0.3.9'
+   # gem 'guard-rspec', '2.5.0'
+   # gem 'spork-rails', '4.0.0'
+   # gem 'guard-spork'
+   # gem 'childprocess', '0.3.9'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
+  gem 'capybara', '~>2.2.0'
+  # gem 'poltergeist', '~>1.4.1'
   gem 'factory_girl_rails', '4.2.0'
-  gem 'cucumber-rails', '1.4.0', :require => false
+  # gem 'cucumber-rails', '1.4.0', :require => false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
   gem 'launchy'
 
