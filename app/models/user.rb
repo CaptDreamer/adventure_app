@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
+  has_many :posts
 	has_secure_password
-    before_save { email.downcase! }
+  before_save { email.downcase! }
 	before_save { username.downcase! }
 	before_create :create_remember_token
 	validates :first_name, presence: true, length: { maximum: 10 }
