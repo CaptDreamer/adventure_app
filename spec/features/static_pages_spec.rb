@@ -24,6 +24,14 @@ describe "StaticPages" do
       it { should have_content(m1.content) }
       it { should have_content(m2.title) }
       it { should have_content(m2.content) }
+
+      describe "when logged in" do
+
+        before { sign_in user }
+
+        it { should have_link("Edit", href: edit_post_path(m1)) }
+        it { should have_link("Delete") }
+      end
     end
   end
 

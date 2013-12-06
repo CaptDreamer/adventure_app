@@ -1,6 +1,6 @@
 AdventureApp::Application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
-  resources :posts, only: [:create, :destroy, :show, :new, :index]
+  resources :posts, only: [:create, :destroy, :show, :new, :edit, :update]
 
   root 'static_pages#home'
 
