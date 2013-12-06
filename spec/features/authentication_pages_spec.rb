@@ -48,6 +48,11 @@ describe "Authentication" do
         expect(page).to have_link("Sign out", href: signout_path)
       end
 
+      describe "has correct links" do
+        it { should have_link('List News', href: posts_path) }
+        it { should have_link('New Post', href: new_post_path) }
+      end
+
       it "and can be logged out" do
         click_link("Sign out") 
         expect(current_path) == root_path

@@ -1,10 +1,9 @@
 AdventureApp::Application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
-  resources :news, only: [:new, :create, :destroy, :index]
+  resources :posts, only: [:create, :destroy, :show, :new, :index]
 
   root 'static_pages#home'
-  
-  match '/newpost', to: 'news#new', via: 'get'
+
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'
   match '/games', to: 'static_pages#games', via: 'get'

@@ -1,4 +1,15 @@
 <div class= "jumbotron">
 	<h1> Adventure|Byte Games </h1>
 	<p class= "lead"> Where ideas and dreams come alive </p>
+</div>
+<div class = "row">
+	<div class = "col-md-8 col-md-offset-1">
+		<% if @posts.any? %>
+			<h3 class="text-center">News</h3>
+			<ol class="posts">
+    			<%= render @posts %>
+  			</ol>
+  			<%= will_paginate @posts %>
+		<% end %>
+	</div>
 </div>	
