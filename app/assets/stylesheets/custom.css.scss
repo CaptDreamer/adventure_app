@@ -21,6 +21,10 @@ body {
 
 /* Typography */
 
+body {
+	line-height: 0;
+}
+
 h1,h2,h3,h4,h5,h6 {
 	color: $pleasedToMeetYou;
 	font-family: pixel-noir;
@@ -41,7 +45,6 @@ h1 {
 
 .small {
 	font-family: pixel-noir-skinny-short;
-	font-size: 1em;
 }
 
 /* Title Screen */
@@ -76,6 +79,10 @@ h1 {
 .panel-footer {
 	background-color: $gray-darker;
 	border-color: $gray;
+	padding: 15px 15px 15px;
+	.small {
+		top: -10px;
+	}
 }
 
 .panel-default {
@@ -95,8 +102,4 @@ h1 {
 
 .posts {
 	padding: 0px 0px 0px 0px
-}
-
-.well {
-	background-color: LightBlue;
 }
