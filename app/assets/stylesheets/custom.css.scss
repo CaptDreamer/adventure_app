@@ -1,5 +1,25 @@
 @import "bootstrap";
 
+/* Fonts */
+
+@font-face {
+  font-family: Pixel-Noir;  
+  src: url('/fonts/Pixel-Noir.ttf');
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: Pixel-Noir-Skinny;  
+  src: url('/fonts/Pixel-Noir Skinny.ttf');
+  overflow: hidden;
+  padding: 0px 0px -5px 0px;
+}
+
+@font-face {
+  font-family: Pixel-Noir-Skinny-Short;  
+  src: url('/fonts/Pixel-Noir Skinny Short.ttf');
+  overflow: hidden;
+}
 /* Mixins and Variables */
 
 $blackNightShade: #2D2A2B;
@@ -10,7 +30,7 @@ $smartyPants: #1B8077;
 /* Universal */
 
 body {
-	background: url(?holder.js/1600x780/black) no-repeat;
+	background-color: black;
 	background-position: center;
 }
 
@@ -18,25 +38,51 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	color: $pleasedToMeetYou;
+	font-family: Pixel-Noir;
+	line-height: 2.6;
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
 	text-align: center;
 } 
 
+.lead {
+	font-family: Pixel-Noir-Skinny;
+	font-size: 12px;
+}
+
+.text-muted {
+	font-family: Pixel-Noir-Skinny;
+}
+
+.small {
+	font-family: Pixel-Noir-Skinny-Short;
+	font-size: 10px;
+}
+
 /* Title Screen */
 
 .jumbotron {
 	text-align: center;
 	background-color: transparent;
-	background: url(?holder.js/800x400/blackNightShade) no-repeat;
 	background-position: center; 
 	h1 {
+		font-size: 48px;
 		color: #999999;
+		line-height: 3;
 	}
 	p {
 		color: #888888;
 	}
+}
+
+/* Nav Bar */
+
+.nav {
+	font-family: Pixel-Noir-Skinny-Short;
+	padding: 6px 0px 0px;
 }
 
 /* Footer */
@@ -48,7 +94,7 @@ h1 {
 /* News Panels */
 
 .panel-footer {
-	padding: 10px 15px 5px 15px;
+	padding: 15px 15px 0px 15px;
 	background-color: $gray-darker;
 	border-color: $gray;
 }
@@ -57,6 +103,7 @@ h1 {
 	background-color: $gray-light;
 	border-color: $gray;
 	.panel-heading {
+		padding: 15px 15px 0px;
 		background-color: $pleasedToMeetYou;
 		border-color: $gray;
 		h3 {
