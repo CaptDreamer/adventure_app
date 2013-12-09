@@ -2,24 +2,9 @@
 
 /* Fonts */
 
-@font-face {
-  font-family: Pixel-Noir;  
-  src: url('/fonts/Pixel-Noir.ttf');
-  overflow: hidden;
-}
+@import "fonts.css";
 
-@font-face {
-  font-family: Pixel-Noir-Skinny;  
-  src: url('/fonts/Pixel-Noir Skinny.ttf');
-  overflow: hidden;
-  padding: 0px 0px -5px 0px;
-}
 
-@font-face {
-  font-family: Pixel-Noir-Skinny-Short;  
-  src: url('/fonts/Pixel-Noir Skinny Short.ttf');
-  overflow: hidden;
-}
 /* Mixins and Variables */
 
 $blackNightShade: #2D2A2B;
@@ -38,10 +23,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	color: $pleasedToMeetYou;
-	font-family: Pixel-Noir;
-	line-height: 2.6;
-	margin: 0;
-	padding: 0;
+	font-family: pixel-noir;
 }
 
 h1 {
@@ -49,17 +31,17 @@ h1 {
 } 
 
 .lead {
-	font-family: Pixel-Noir-Skinny;
-	font-size: 12px;
+	font-family: pixel-noir-skinny;
+	font-size: 1em;
 }
 
 .text-muted {
-	font-family: Pixel-Noir-Skinny;
+	font-family: pixel-noir-skinny;
 }
 
 .small {
-	font-family: Pixel-Noir-Skinny-Short;
-	font-size: 10px;
+	font-family: pixel-noir-skinny-short;
+	font-size: 1em;
 }
 
 /* Title Screen */
@@ -69,9 +51,8 @@ h1 {
 	background-color: transparent;
 	background-position: center; 
 	h1 {
-		font-size: 48px;
+		font-size: 2em;
 		color: #999999;
-		line-height: 3;
 	}
 	p {
 		color: #888888;
@@ -81,8 +62,7 @@ h1 {
 /* Nav Bar */
 
 .nav {
-	font-family: Pixel-Noir-Skinny-Short;
-	padding: 6px 0px 0px;
+	font-family: pixel-noir-skinny-short;
 }
 
 /* Footer */
@@ -94,7 +74,6 @@ h1 {
 /* News Panels */
 
 .panel-footer {
-	padding: 15px 15px 0px 15px;
 	background-color: $gray-darker;
 	border-color: $gray;
 }
@@ -103,7 +82,6 @@ h1 {
 	background-color: $gray-light;
 	border-color: $gray;
 	.panel-heading {
-		padding: 15px 15px 0px;
 		background-color: $pleasedToMeetYou;
 		border-color: $gray;
 		h3 {
