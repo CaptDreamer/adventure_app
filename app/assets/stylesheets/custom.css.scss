@@ -1,20 +1,71 @@
 @import "bootstrap";
 
-.jumbotron {
-	text-align: center;
-	background-color: transparent;
+/* Mixins and Variables */
+
+$blackNightShade: #2D2A2B;
+$freshOutlook: #E6754E;
+$pleasedToMeetYou: #C84B1F;
+$smartyPants: #1B8077;
+
+/* Universal */
+
+body {
+	background: url(?holder.js/1600x780/black) no-repeat;
+	background-position: center;
 }
 
-#footer {
-	padding: 15px 15px;
+/* Typography */
+
+h1,h2,h3,h4,h5,h6 {
+	color: $pleasedToMeetYou;
 }
 
 h1 {
 	text-align: center;
 } 
 
+/* Title Screen */
+
+.jumbotron {
+	text-align: center;
+	background-color: transparent;
+	background: url(?holder.js/800x400/blackNightShade) no-repeat;
+	background-position: center; 
+	h1 {
+		color: #999999;
+	}
+	p {
+		color: #888888;
+	}
+}
+
+/* Footer */
+
+#footer {
+	padding: 15px 15px;
+}
+
+/* News Panels */
+
 .panel-footer {
-	padding: 10px 15px 5px 15px
+	padding: 10px 15px 5px 15px;
+	background-color: $gray-darker;
+	border-color: $gray;
+}
+
+.panel-default {
+	background-color: $gray-light;
+	border-color: $gray;
+	.panel-heading {
+		background-color: $pleasedToMeetYou;
+		border-color: $gray;
+		h3 {
+			color: $blackNightShade;
+		}
+		a {
+			color: $blackNightShade;
+		}
+	}
 }
 
 .posts {
