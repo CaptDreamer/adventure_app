@@ -4,6 +4,8 @@ AdventureApp::Application.routes.draw do
 
   root 'static_pages#home'
 
+  match '/test', to: 'static_pages#rocks', via: 'get'
+
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'
   match '/games', to: 'static_pages#games', via: 'get'

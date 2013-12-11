@@ -8,4 +8,7 @@ class StaticPagesController < ApplicationController
 
   def company
   end
+
+  def rocks
+  end
 end
