@@ -1,5 +1,29 @@
 <% provide(:title, "Games") %>
-<div class= "jumbotron">
-	<h1>Games</h1>
-	<p class= "lead">Find me in app/views/static_pages/games.html.erb</p>
+
+<div class="container marketing">
+	<hr class="featurette-divider">
+
+	<div class="row featurette">
+		<div class="col-md-7">
+  			<h2 class="featurette-heading">Space Rocks <span class="text-muted">Can you survive?</span></h2>
+  			<p class="lead">A simple game created in our spare time for our players to pass the time with.</p>
+		</div>
+		<div class="col-md-5">
+  			<%= image_tag("rocksthumblarge.png") %>
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
+
+	<div class="row featurette">
+		<div class="col-md-5">
+  			<%= holder_tag '400x400/#222:#eee', 'Coming Soon' %>
+		</div>
+		<div class="col-md-7">
+  			<h2 class="featurette-heading">Undergrounds <span class="text-muted">Coming Soon</span></h2>
+  			<p class="lead">Check back with us for updates and features of our debut game.</p>
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
 </div>
