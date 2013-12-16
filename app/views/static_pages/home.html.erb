@@ -3,7 +3,7 @@
 	<h1>Gameplay, Design, Fun.</h1>
 </div>
 <div class = "row">
-	<div class = "col-md-8 col-md-offset-1">
+	<div class = "col-md-7 col-md-offset-1">
 		<% if @posts.any? %>
 			<h3 class="text-center">News</h3>
 			<ol class="posts">
@@ -11,5 +11,30 @@
   			</ol>
   			<%= will_paginate @posts %>
 		<% end %>
+	</div>
+	<div class = "col-md-3" >
+		<h3 class="text-center">Games</h3>
+		<!-- <div class = "well"> -->
+			<div class = "row">
+				<div class="thumbnail">
+      				<%= image_tag("rocksthumb.png") %>
+      				<div class="caption">
+        				<h4 class = "text-center">Space Rocks</h5>
+        				<p>Simple game to learn, but how far can you get?</p>
+        				<p><a href= <%= spacerocks_path %> class="btn btn-primary btn-lg btn-block" role="button">Play Now!</a>
+     				</div>
+    			</div>
+			</div>
+			<div class = "row">
+				<div class="thumbnail">
+      				<%= holder_tag '277x125/#000:#fff', 'Coming Soon' %>
+      				<div class="caption">
+        				<h5 class = "text-center">Underlands (WIP)</h5>
+        				<p>Adventure|Byte's debut game, check back soon for more information</p>
+        				<p><a href="#" class="btn btn-primary btn-lg btn-block" disabled = "disabled" role="button">Play Now!</a>
+     				</div>
+    			</div>
+			</div>
+		<!-- </div> -->
 	</div>
 </div>	

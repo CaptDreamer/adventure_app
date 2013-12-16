@@ -30,6 +30,11 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: pixel-noir;
 }
 
+p {
+	color: $pleasedToMeetYou;
+	font-family: pixel-noir-skinny-short;
+}
+
 h1 {
 	text-align: center;
 } 
@@ -113,4 +118,19 @@ h1 {
 	float: none;
 	margin: 0 auto;
 	padding: 5px 5px 5px 5px;
+}
+
+/* Thumbnails */
+
+.thumbnail {
+	background-color: $gray-dark;
+	border-color: $gray-darker;
+	> img {
+		margin-top: 20px;
+	}
+	.btn-primary {
+		color: $gray-lighter;
+		background-color: $pleasedToMeetYou;
+		border-color: $pleasedToMeetYou;
+	}
 }
