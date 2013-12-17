@@ -1,9 +1,12 @@
-<div class= "jumbotron">
+<div class= "jumbotron space-gfx">
 	<%= image_tag("mainlogo.png") %>
 	<h1>Gameplay, Design, Fun.</h1>
 </div>
-<div class = "row">
-	<div class = "col-md-7 col-md-offset-1">
+
+<hr class = "grass-divider">
+
+<div class = "row ground-back">
+	<div class = "col-md-7 col-md-offset-1 ground-hole">
 		<% if @posts.any? %>
 			<h3 class="text-center">News</h3>
 			<ol class="posts">
@@ -12,10 +15,10 @@
   			<%= will_paginate @posts %>
 		<% end %>
 	</div>
-	<div class = "col-md-3" >
+	<div class = "col-md-3 ground-hole" >
 		<h3 class="text-center">Games</h3>
 		<!-- <div class = "well"> -->
-			<div class = "row">
+			<!-- <div class = "row"> -->
 				<div class="thumbnail">
       				<%= image_tag("rocksthumb.png") %>
       				<div class="caption">
@@ -24,8 +27,8 @@
         				<p><a href= <%= spacerocks_path %> class="btn btn-primary btn-lg btn-block" role="button">Play Now!</a>
      				</div>
     			</div>
-			</div>
-			<div class = "row">
+			<!-- </div> -->
+			<!-- <div class = "row"> -->
 				<div class="thumbnail">
       				<%= holder_tag '277x125/#000:#fff', 'Coming Soon' %>
       				<div class="caption">
@@ -34,7 +37,7 @@
         				<p><a href="#" class="btn btn-primary btn-lg btn-block" disabled = "disabled" role="button">Play Now!</a>
      				</div>
     			</div>
-			</div>
+			<!-- </div> -->
 		<!-- </div> -->
 	</div>
 </div>	

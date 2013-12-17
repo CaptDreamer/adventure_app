@@ -19,6 +19,34 @@ body {
 	background-position: center;
 }
 
+/* Graphics */
+
+.grass-divider {
+	background-image: image_url("groundtop.png");
+	background-repeat: repeat;
+	height: 40px;
+	border-top: 0;
+	margin: 0 0;
+}
+
+.ground-back {
+	background-image: image_url("ground.png");
+	background-repeat: repeat;
+}
+
+.ground-hole {
+	background-image: image_url("grounddark.png");
+	background-repeat: repeat;
+	border: 8px solid transparent;
+	border-image: image-url("groundborder.png") 8 8 round;
+}
+
+.space-gfx {
+	background-image: image-url("space.png");
+	background-repeat: repeat;
+	margin: 0 0 0 0;
+}
+
 /* Typography */
 
 body {
