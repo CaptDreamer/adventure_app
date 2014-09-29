@@ -1,0 +1,9 @@
+<Response>
+  <Dial>
+    <Conference 
+        startConferenceOnEnter='true' 
+        endConferenceOnExit='true' muted="false">
+        MyRoom
+    </Conference>
+  </Dial>
+</Response>
